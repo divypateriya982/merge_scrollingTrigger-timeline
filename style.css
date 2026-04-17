@@ -163,33 +163,62 @@ nav .part-2 button:active {
 .elem {
     width: 47%;
     height: 250px;
-    background-color: red;
+    border: 2px black solid;
     border-radius: 10px;
     box-shadow: 0 10px 0 black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .elem-part1 {
     width: 50%;
     height: 100%;
-    padding: 30px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.elem h2 {
-    font-size: 2rem;
+.elem-part1 h2 {
+    width: 85%;
+    padding: 0 6px;
+    background-color: #BDD85F;
+    border-radius: 5px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
-.elem h4 {
+.elem-part1 h4 {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.elem h4 i {
+.elem-part1 h4 i {
     font-size: 1.5rem;
     font-weight: 500;
     padding: 5px;
     background-color: black;
-    color: white;
+    color: #BDD85F;
     border-radius: 50%;
+}
+.elem-part2 img {
+    margin-left: 60px;
+}
+.black {
+    background-color: black;
+}
+.elem.black h4 {
+    color: white;
+}
+.elem.black h2 {
+    background-color: white;
+}
+.elem.black h4 i {
+    background-color: white;
+    color: black;
+}
+.elem.black .elem-part2 img {
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
