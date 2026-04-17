@@ -1,0 +1,195 @@
+@font-face {
+    font-family: china;
+    src: url('./Neue\ Machina\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: china;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    padding: 30px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1 {
+    font-size: 2rem;
+}
+nav h1 i {
+    display: inline-block;
+    rotate: 45deg;
+}
+nav .part-2 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav .part-2 h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+nav .part-2 button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #111;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+nav .part-2 button:active {
+    transform: scale(0.97);
+}
+
+.center {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    padding: 0 70px;
+    margin-top: 30px;
+}
+.center-part1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.center-part1 h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+.center-part1 p {
+    font-size: 1.1rem;
+    width: 65%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.center-part1 button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    background-color: #111;
+    color: #fff;
+}
+.center-part2 {
+    width: 50%;
+    height: 90%;
+    position: relative;
+}
+.center-part2 img {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.section1bottom {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section1bottom img {
+    object-fit: cover;
+}
+.section1bottom .amazon-logo {
+    height: 120px;
+}
+.section1bottom .dribble-logo {
+    height: 100px;
+}
+.section1bottom .hubspot-logo {
+    height: 70px;
+}
+.section1bottom .notion-logo {
+    height: 70px;
+}
+.section1bottom .netflix-logo {
+    height: 100px;
+}
+.section1bottom .zoom-logo {
+    height: 100px;
+}
+
+.section-2 {
+    width: 100%;
+}
+.services {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 70px;
+}
+.services h3 {
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    background-color: #BDD85F;
+    border-radius: 5px;
+}
+.services p {
+    width: 40%;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.container {
+    width: 100%;
+    height: 90%;
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.elem {
+    width: 47%;
+    height: 250px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 10px 0 black;
+}
+.elem-part1 {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.elem h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.elem h4 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.elem h4 i {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
