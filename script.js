@@ -75,7 +75,7 @@ function page3animation() {
         scrollTrigger: {
             trigger: '.section-3',
             scroller: 'body',
-            markers: true,
+            markers: false,
             start: 'top 50%',
             end: 'top 30%',
             scrub: 2
