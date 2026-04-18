@@ -254,8 +254,13 @@ nav .part-2 button:active {
     color: white;
     border-radius: 10px;
     margin-top: 20px;
+    transition: transform ease 0.3s;
+    cursor: pointer;
 }
-.section-3-top-right img {
+.section3-top-left button:active {
+    transform: scale(0.97);
+}
+.section3-top-right img {
     width: 250px;
     height: 220px;
 }
