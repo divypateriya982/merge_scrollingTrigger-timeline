@@ -33,5 +33,43 @@ function page1animation() {
         stagger: 0.15
     });
 }
-// page1animation();
+page1animation();
 
+function page2animation() {
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section-2',
+            scroller: 'body',
+            markers: false,
+            start: 'top 50%',
+            end: 'top 10%',
+            scrub: 2
+        }
+    });
+    tl2.from('.services', {
+        y: 40,
+        opacity: 0
+    })
+    tl2.from('.line1.left', {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, 'line1'); // agar koi bhi elements ke animation ek saath run karne hai toh bracket ke baad kuch bhi same de doh
+    tl2.from('.line1.right', {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, 'line1');
+    tl2.from('.line2.left', {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, 'line2');
+    tl2.from('.line2.right', {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, 'line2');
+
+}
+page2animation();
