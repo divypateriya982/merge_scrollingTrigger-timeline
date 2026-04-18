@@ -77,7 +77,7 @@ function page3animation() {
             scroller: 'body',
             markers: false,
             start: 'top 50%',
-            end: 'top 30%',
+            end: 'top 5%',
             scrub: 2
         }
     });
