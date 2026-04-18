@@ -42,7 +42,7 @@ function page2animation() {
             scroller: 'body',
             markers: false,
             start: 'top 50%',
-            end: 'top 10%',
+            end: 'top 0',
             scrub: 2
         }
     });
@@ -53,23 +53,56 @@ function page2animation() {
     tl2.from('.line1.left', {
         x: -300,
         opacity: 0,
-        duration: 1
     }, 'line1'); // agar koi bhi elements ke animation ek saath run karne hai toh bracket ke baad kuch bhi same de doh
     tl2.from('.line1.right', {
         x: 300,
         opacity: 0,
-        duration: 1
     }, 'line1');
     tl2.from('.line2.left', {
         x: -300,
         opacity: 0,
-        duration: 1
     }, 'line2');
     tl2.from('.line2.right', {
         x: 300,
         opacity: 0,
-        duration: 1
     }, 'line2');
 
 }
 page2animation();
+
+function page3animation() {
+    let tl3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section-3',
+            scroller: 'body',
+            markers: true,
+            start: 'top 50%',
+            end: 'top 30%',
+            scrub: 2
+        }
+    });
+    tl3.from('.section3-top-left h2', {
+        x: -30,
+        opacity: 0
+    });
+    tl3.from('.section3-top-left p', {
+        x: -20,
+        opacity: 0
+    });
+    tl3.from('.section3-top-left button', {
+        opacity: 0
+    });
+    tl3.from('.section3-top-right img', {
+        x: 50,
+        opacity: 0
+    }, '-=1.3');
+    tl3.from('.case-study', {
+        y: 40,
+        opacity: 0
+    });
+    tl3.from('.footer-part', {
+        y: 100,
+        opacity: 0
+    });
+}
+page3animation();
